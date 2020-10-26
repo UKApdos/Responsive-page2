@@ -1,8 +1,8 @@
 :root {
-    --primary-light: rgb(112, 173, 158);
-    --primary-dark: rgb(17, 49, 44);
-    --dark: rgb(6, 36, 34);
-    --light: #e2f5f3;
+    --primary-light: rgb(112, 173, 168);
+    --primary-dark: rgb(17, 35, 49);
+    --dark: rgb(6, 27, 36);
+    --light: #e2eaf5;
     --shadow: 0 1px 5px rgb(36, 14, 6);  
 }
 
@@ -134,4 +134,23 @@ img {
     .main-nav ul {
         grid-template-columns: 1fr;
     }
+}
+
+.boxes {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+    background: var(--primary-light);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+
+.portofolio {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
